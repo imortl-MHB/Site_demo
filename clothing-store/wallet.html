@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кошелёк — GRANUM</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">GRAN<span>UM</span></a>
+            <nav class="header-nav"><a href="catalog.html">Каталог</a><a href="preorder.html">Предзаказ</a><a
+                    href="feedback.html">Контакты</a></nav>
+            <div class="header-search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <circle cx="11" cy="11" r="8" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                </svg><input type="text" placeholder="Поиск..."></div>
+            <div class="header-icons">
+                <a href="profile.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                        <circle cx="12" cy="7" r="4" />
+                    </svg></a>
+                <a href="cart.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+                        <line x1="3" y1="6" x2="21" y2="6" />
+                        <path d="M16 10a4 4 0 0 1-8 0" />
+                    </svg><span class="icon-badge">3</span></a>
+            </div>
+            <button class="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+    <div class="mobile-menu">
+        <div class="mobile-menu-header"><span class="logo">GRAN<span>UM</span></span><button
+                class="mobile-menu-close">✕</button></div>
+        <nav><a href="index.html">Главная</a><a href="catalog.html">Каталог</a><a href="preorder.html">Предзаказ</a><a
+                href="profile.html">Профиль</a><a href="wallet.html">Кошелёк</a><a href="cart.html">Корзина</a><a
+                href="feedback.html">Обратная связь</a></nav>
+    </div>
+
+    <div class="container">
+        <div class="breadcrumbs"><a href="index.html">Главная</a><span>/</span><a
+                href="profile.html">Профиль</a><span>/</span><span>Кошелёк</span></div>
+    </div>
+
+    <section class="section" style="padding-top:0;">
+        <div class="container" style="max-width:800px;">
+            <h1 class="section-title" style="margin-bottom:24px;">Кошелёк</h1>
+
+            <div class="wallet-balance fade-in">
+                <h2>Баланс</h2>
+                <div class="amount">4 320 <span>₽</span></div>
+                <div class="wallet-actions">
+                    <button class="btn btn-primary btn-sm">Пополнить</button>
+                    <button class="btn btn-secondary btn-sm">Вывести</button>
+                    <button class="btn btn-outline btn-sm">Применить промокод</button>
+                </div>
+            </div>
+
+            <!-- Bonuses -->
+            <div class="profile-section fade-in">
+                <h2>Бонусы</h2>
+                <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px;">
+                    <div style="text-align:center;padding:20px;background:var(--bg-hover);border-radius:var(--radius);">
+                        <div style="font-size:24px;font-weight:700;color:var(--accent);">860</div>
+                        <div style="font-size:13px;color:var(--text-muted);margin-top:4px;">Активные бонусы</div>
+                    </div>
+                    <div style="text-align:center;padding:20px;background:var(--bg-hover);border-radius:var(--radius);">
+                        <div style="font-size:24px;font-weight:700;">2 140</div>
+                        <div style="font-size:13px;color:var(--text-muted);margin-top:4px;">Потрачено бонусов</div>
+                    </div>
+                    <div style="text-align:center;padding:20px;background:var(--bg-hover);border-radius:var(--radius);">
+                        <div style="font-size:24px;font-weight:700;">5%</div>
+                        <div style="font-size:13px;color:var(--text-muted);margin-top:4px;">Кэшбек</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Promo Codes -->
+            <div class="profile-section fade-in">
+                <h2>Промокоды</h2>
+                <div
+                    style="padding:14px;border:1px solid var(--border);border-radius:var(--radius);margin-bottom:10px;display:flex;justify-content:space-between;align-items:center;">
+                    <div><strong style="font-size:15px;letter-spacing:1px;">WELCOME10</strong>
+                        <p style="font-size:12px;color:var(--text-muted);margin-top:2px;">Скидка 10% на первый заказ</p>
+                    </div>
+                    <span style="font-size:12px;color:var(--success);">Активен</span>
+                </div>
+                <div
+                    style="padding:14px;border:1px solid var(--border);border-radius:var(--radius);margin-bottom:10px;display:flex;justify-content:space-between;align-items:center;">
+                    <div><strong style="font-size:15px;letter-spacing:1px;">SPRING500</strong>
+                        <p style="font-size:12px;color:var(--text-muted);margin-top:2px;">Скидка 500 ₽ при заказе от 5
+                            000 ₽</p>
+                    </div>
+                    <span style="font-size:12px;color:var(--success);">Активен</span>
+                </div>
+                <div
+                    style="padding:14px;border:1px solid var(--border);border-radius:var(--radius);display:flex;justify-content:space-between;align-items:center;opacity:0.5;">
+                    <div><strong style="font-size:15px;letter-spacing:1px;">NEWYEAR15</strong>
+                        <p style="font-size:12px;color:var(--text-muted);margin-top:2px;">Скидка 15% — истёк</p>
+                    </div>
+                    <span style="font-size:12px;color:var(--text-muted);">Истёк</span>
+                </div>
+            </div>
+
+            <!-- Transaction History -->
+            <div class="profile-section fade-in">
+                <h2>История операций</h2>
+                <div class="wallet-history">
+                    <div class="wallet-item">
+                        <div class="wallet-item-info">
+                            <h4>Возврат за заказ #GR-20260115</h4>
+                            <p>15 января 2026</p>
+                        </div>
+                        <div class="wallet-item-amount positive">+3 990 ₽</div>
+                    </div>
+                    <div class="wallet-item">
+                        <div class="wallet-item-info">
+                            <h4>Оплата заказа #GR-20260225</h4>
+                            <p>25 февраля 2026</p>
+                        </div>
+                        <div class="wallet-item-amount negative">−2 000 ₽</div>
+                    </div>
+                    <div class="wallet-item">
+                        <div class="wallet-item-info">
+                            <h4>Пополнение кошелька</h4>
+                            <p>20 февраля 2026</p>
+                        </div>
+                        <div class="wallet-item-amount positive">+5 000 ₽</div>
+                    </div>
+                    <div class="wallet-item">
+                        <div class="wallet-item-info">
+                            <h4>Кэшбек за заказ #GR-20260201</h4>
+                            <p>5 февраля 2026</p>
+                        </div>
+                        <div class="wallet-item-amount positive">+645 ₽</div>
+                    </div>
+                    <div class="wallet-item">
+                        <div class="wallet-item-info">
+                            <h4>Оплата заказа #GR-20260201</h4>
+                            <p>1 февраля 2026</p>
+                        </div>
+                        <div class="wallet-item-amount negative">−12 900 ₽</div>
+                    </div>
+                    <div class="wallet-item">
+                        <div class="wallet-item-info">
+                            <h4>Бонусное начисление</h4>
+                            <p>15 января 2026</p>
+                        </div>
+                        <div class="wallet-item-amount positive">+500 ₽</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom"><span>© 2026 GRANUM. Все права защищены.</span></div>
+        </div>
+    </footer>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

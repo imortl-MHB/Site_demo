@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина — GRANUM</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">GRAN<span>UM</span></a>
+            <nav class="header-nav"><a href="catalog.html">Каталог</a><a href="preorder.html">Предзаказ</a><a
+                    href="feedback.html">Контакты</a></nav>
+            <div class="header-search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <circle cx="11" cy="11" r="8" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                </svg><input type="text" placeholder="Поиск..."></div>
+            <div class="header-icons">
+                <a href="profile.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                        <circle cx="12" cy="7" r="4" />
+                    </svg></a>
+                <a href="wallet.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <rect x="2" y="4" width="20" height="16" rx="2" />
+                        <path d="M2 10h20" />
+                        <circle cx="17" cy="14" r="1.5" fill="currentColor" />
+                    </svg></a>
+                <a href="cart.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+                        <line x1="3" y1="6" x2="21" y2="6" />
+                        <path d="M16 10a4 4 0 0 1-8 0" />
+                    </svg><span class="icon-badge">3</span></a>
+            </div>
+            <button class="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+    <div class="mobile-menu">
+        <div class="mobile-menu-header"><span class="logo">GRAN<span>UM</span></span><button
+                class="mobile-menu-close">✕</button></div>
+        <nav><a href="index.html">Главная</a><a href="catalog.html">Каталог</a><a href="preorder.html">Предзаказ</a><a
+                href="profile.html">Профиль</a><a href="wallet.html">Кошелёк</a><a href="cart.html">Корзина</a><a
+                href="feedback.html">Обратная связь</a></nav>
+    </div>
+
+    <div class="container">
+        <div class="breadcrumbs"><a href="index.html">Главная</a><span>/</span><span>Корзина</span></div>
+    </div>
+
+    <section class="section" style="padding-top:0;">
+        <div class="container">
+            <h1 class="section-title" style="margin-bottom:24px;">Корзина <span
+                    style="font-size:16px;color:var(--text-muted);font-weight:400;">(3 товара)</span></h1>
+            <div class="cart-layout">
+                <!-- Items -->
+                <div>
+                    <div class="cart-item fade-in">
+                        <div class="cart-item-img">👟</div>
+                        <div class="cart-item-info">
+                            <h3><a href="product.html">Urban Runner X1</a></h3>
+                            <p>North Line · Размер: 42 · Цвет: Чёрный</p>
+                            <p style="font-size:12px;color:var(--text-muted);">Арт: NL-URX1-2026-BK</p>
+                            <div class="cart-item-qty">
+                                <button class="qty-btn qty-minus">−</button>
+                                <span class="qty-value">1</span>
+                                <button class="qty-btn qty-plus">+</button>
+                            </div>
+                        </div>
+                        <div class="cart-item-price">
+                            <span class="price-current">12 900 ₽</span>
+                            <span class="cart-remove">Удалить</span>
+                        </div>
+                    </div>
+
+                    <div class="cart-item fade-in">
+                        <div class="cart-item-img">👕</div>
+                        <div class="cart-item-info">
+                            <h3><a href="product.html">Essential Tee Oversize</a></h3>
+                            <p>Mono Studio · Размер: L · Цвет: Белый</p>
+                            <p style="font-size:12px;color:var(--text-muted);">Арт: MS-ETO-2026-WH</p>
+                            <div class="cart-item-qty">
+                                <button class="qty-btn qty-minus">−</button>
+                                <span class="qty-value">2</span>
+                                <button class="qty-btn qty-plus">+</button>
+                            </div>
+                        </div>
+                        <div class="cart-item-price">
+                            <span class="price-current">6 380 ₽</span>
+                            <span class="price-old" style="font-size:13px;">7 980 ₽</span>
+                            <span class="cart-remove">Удалить</span>
+                        </div>
+                    </div>
+
+                    <div class="cart-item fade-in">
+                        <div class="cart-item-img">🧢</div>
+                        <div class="cart-item-info">
+                            <h3><a href="product.html">Minimal Cap Washed</a></h3>
+                            <p>Black Canvas · Размер: Uni · Цвет: Серый</p>
+                            <p style="font-size:12px;color:var(--text-muted);">Арт: BC-MCW-2026-GR</p>
+                            <div class="cart-item-qty">
+                                <button class="qty-btn qty-minus">−</button>
+                                <span class="qty-value">1</span>
+                                <button class="qty-btn qty-plus">+</button>
+                            </div>
+                        </div>
+                        <div class="cart-item-price">
+                            <span class="price-current">2 290 ₽</span>
+                            <span class="price-old" style="font-size:13px;">2 690 ₽</span>
+                            <span class="cart-remove">Удалить</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Summary -->
+                <div class="cart-summary fade-in">
+                    <h3>Итого</h3>
+                    <div class="summary-row"><span>3 товара</span><span>21 570 ₽</span></div>
+                    <div class="summary-row"><span>Скидка</span><span style="color:var(--success);">−2 000 ₽</span>
+                    </div>
+                    <div class="summary-row"><span>Доставка</span><span>Бесплатно</span></div>
+
+                    <div class="form-group" style="margin-top:16px;">
+                        <label>Город</label>
+                        <select class="form-control">
+                            <option>Москва</option>
+                            <option>Санкт-Петербург</option>
+                            <option>Казань</option>
+                            <option>Екатеринбург</option>
+                            <option>Новосибирск</option>
+                            <option>Краснодар</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Способ доставки</label>
+                        <select class="form-control">
+                            <option>Курьер — 1–3 дня</option>
+                            <option>Самовывоз — сегодня</option>
+                            <option>Пункт выдачи — 2–4 дня</option>
+                            <option>Экспресс — сегодня</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Промокод</label>
+                        <div style="display:flex;gap:8px;">
+                            <input type="text" class="form-control" placeholder="Введите код">
+                            <button class="btn btn-secondary btn-sm">ОК</button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Комментарий к заказу</label>
+                        <textarea class="form-control" placeholder="Например, позвонить за час до доставки"
+                            style="min-height:60px;"></textarea>
+                    </div>
+
+                    <div class="summary-row total"><span>К оплате</span><span>19 570 ₽</span></div>
+                    <button class="btn btn-primary btn-lg" style="width:100%;margin-top:16px;">Оформить заказ</button>
+                    <p style="font-size:11px;color:var(--text-muted);text-align:center;margin-top:10px;">Нажимая кнопку,
+                        вы соглашаетесь с условиями оферты</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom"><span>© 2026 GRANUM. Все права защищены.</span></div>
+        </div>
+    </footer>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Предзаказ — GRANUM</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">GRAN<span>UM</span></a>
+            <nav class="header-nav"><a href="catalog.html">Каталог</a><a href="preorder.html"
+                    class="active">Предзаказ</a><a href="feedback.html">Контакты</a></nav>
+            <div class="header-search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <circle cx="11" cy="11" r="8" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                </svg><input type="text" placeholder="Поиск..."></div>
+            <div class="header-icons">
+                <a href="profile.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                        <circle cx="12" cy="7" r="4" />
+                    </svg></a>
+                <a href="wallet.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <rect x="2" y="4" width="20" height="16" rx="2" />
+                        <path d="M2 10h20" />
+                        <circle cx="17" cy="14" r="1.5" fill="currentColor" />
+                    </svg></a>
+                <a href="cart.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+                        <line x1="3" y1="6" x2="21" y2="6" />
+                        <path d="M16 10a4 4 0 0 1-8 0" />
+                    </svg><span class="icon-badge">3</span></a>
+            </div>
+            <button class="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+    <div class="mobile-menu">
+        <div class="mobile-menu-header"><span class="logo">GRAN<span>UM</span></span><button
+                class="mobile-menu-close">✕</button></div>
+        <nav><a href="index.html">Главная</a><a href="catalog.html">Каталог</a><a href="preorder.html">Предзаказ</a><a
+                href="profile.html">Профиль</a><a href="wallet.html">Кошелёк</a><a href="cart.html">Корзина</a><a
+                href="feedback.html">Обратная связь</a></nav>
+    </div>
+
+    <div class="container">
+        <div class="breadcrumbs"><a href="index.html">Главная</a><span>/</span><span>Предзаказ</span></div>
+    </div>
+
+    <section class="section" style="padding-top:0;">
+        <div class="container">
+            <h1 class="section-title fade-in">Предзаказ</h1>
+            <p class="section-subtitle fade-in">Закажите до поступления — зафиксируйте цену и получите первыми</p>
+
+            <!-- How it works -->
+            <div class="preorder-steps fade-in">
+                <div class="step-card">
+                    <div class="step-num">1</div>
+                    <h4>Выберите товар</h4>
+                    <p>Найдите товар с пометкой «Предзаказ» и оформите заявку</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-num">2</div>
+                    <h4>Фиксируем цену</h4>
+                    <p>Цена закрепляется за вами на момент оформления</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-num">3</div>
+                    <h4>Товар приходит</h4>
+                    <p>Как только товар поступает на склад, мы уведомляем вас</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-num">4</div>
+                    <h4>Отправляем первым</h4>
+                    <p>Предзаказы отправляются в приоритетном порядке</p>
+                </div>
+            </div>
+
+            <!-- Products -->
+            <div class="section-header fade-in" style="margin-top:48px;">
+                <h2 class="section-title">Товары по предзаказу</h2>
+            </div>
+            <div class="products-grid fade-in">
+                <div class="product-card">
+                    <div class="product-thumb">
+                        <div class="placeholder-img">👟</div>
+                        <div class="product-badges"><span class="badge badge-preorder">Предзаказ</span></div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">North Line</div>
+                        <div class="product-name"><a href="product.html">Aero Boost V2</a></div>
+                        <div class="product-price"><span class="price-current">16 500 ₽</span></div>
+                        <div class="product-status status-preorder">◌ Ожидается: конец марта 2026</div>
+                        <div class="product-sizes">
+                            <span>40</span><span>41</span><span>42</span><span>43</span><span>44</span></div>
+                        <button class="btn btn-primary btn-sm" style="width:100%;margin-top:10px;">Оформить
+                            предзаказ</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-thumb">
+                        <div class="placeholder-img">🧥</div>
+                        <div class="product-badges"><span class="badge badge-preorder">Предзаказ</span></div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">Mono Studio</div>
+                        <div class="product-name"><a href="product.html">Modular Vest System</a></div>
+                        <div class="product-price"><span class="price-current">14 200 ₽</span></div>
+                        <div class="product-status status-preorder">◌ Ожидается: апрель 2026</div>
+                        <div class="product-sizes"><span>S</span><span>M</span><span>L</span><span>XL</span></div>
+                        <button class="btn btn-primary btn-sm" style="width:100%;margin-top:10px;">Оформить
+                            предзаказ</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-thumb">
+                        <div class="placeholder-img">👖</div>
+                        <div class="product-badges"><span class="badge badge-preorder">Предзаказ</span></div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">Static Wear</div>
+                        <div class="product-name"><a href="product.html">Archive Denim Wide</a></div>
+                        <div class="product-price"><span class="price-current">9 400 ₽</span></div>
+                        <div class="product-status status-preorder">◌ Ожидается: конец марта 2026</div>
+                        <div class="product-sizes"><span>S</span><span>M</span><span>L</span><span>XL</span></div>
+                        <button class="btn btn-primary btn-sm" style="width:100%;margin-top:10px;">Оформить
+                            предзаказ</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-thumb">
+                        <div class="placeholder-img">⌚</div>
+                        <div class="product-badges"><span class="badge badge-preorder">Предзаказ</span><span
+                                class="badge badge-new">Новинка</span></div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">Black Canvas</div>
+                        <div class="product-name"><a href="product.html">Ceramic Watch Band</a></div>
+                        <div class="product-price"><span class="price-current">5 800 ₽</span></div>
+                        <div class="product-status status-preorder">◌ Ожидается: май 2026</div>
+                        <button class="btn btn-primary btn-sm" style="width:100%;margin-top:10px;">Оформить
+                            предзаказ</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-thumb">
+                        <div class="placeholder-img">👟</div>
+                        <div class="product-badges"><span class="badge badge-preorder">Предзаказ</span></div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">District 06</div>
+                        <div class="product-name"><a href="product.html">Low Rider V3</a></div>
+                        <div class="product-price"><span class="price-current">13 800 ₽</span></div>
+                        <div class="product-status status-preorder">◌ Ожидается: апрель 2026</div>
+                        <div class="product-sizes"><span>41</span><span>42</span><span>43</span><span>44</span></div>
+                        <button class="btn btn-primary btn-sm" style="width:100%;margin-top:10px;">Оформить
+                            предзаказ</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-thumb">
+                        <div class="placeholder-img">👕</div>
+                        <div class="product-badges"><span class="badge badge-preorder">Предзаказ</span></div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">Urban Form</div>
+                        <div class="product-name"><a href="product.html">Structured Polo SS26</a></div>
+                        <div class="product-price"><span class="price-current">5 200 ₽</span></div>
+                        <div class="product-status status-preorder">◌ Ожидается: май 2026</div>
+                        <div class="product-sizes"><span>S</span><span>M</span><span>L</span></div>
+                        <button class="btn btn-primary btn-sm" style="width:100%;margin-top:10px;">Оформить
+                            предзаказ</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Preorder Form -->
+            <div class="profile-section fade-in" style="max-width:600px;margin:48px auto 0;">
+                <h2>Быстрый предзаказ</h2>
+                <p style="font-size:14px;color:var(--text-secondary);margin-bottom:20px;">Не нашли нужный товар?
+                    Оставьте заявку — мы проверим наличие и свяжемся с вами.</p>
+                <div class="form-row">
+                    <div class="form-group"><label>Имя</label><input type="text" class="form-control"
+                            placeholder="Ваше имя"></div>
+                    <div class="form-group"><label>Телефон</label><input type="tel" class="form-control"
+                            placeholder="+7 (___) ___-__-__"></div>
+                </div>
+                <div class="form-group"><label>Что ищете</label><input type="text" class="form-control"
+                        placeholder="Название товара, бренд, артикул..."></div>
+                <div class="form-group"><label>Email</label><input type="email" class="form-control"
+                        placeholder="email@example.com"></div>
+                <button class="btn btn-primary">Оставить заявку</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom"><span>© 2026 GRANUM. Все права защищены.</span></div>
+        </div>
+    </footer>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог — GRANUM</title>
+    <meta name="description"
+        content="Каталог одежды GRANUM: кроссовки, футболки, толстовки, брюки, куртки, аксессуары.">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">GRAN<span>UM</span></a>
+            <nav class="header-nav"><a href="catalog.html" class="active">Каталог</a><a
+                    href="preorder.html">Предзаказ</a><a href="feedback.html">Контакты</a></nav>
+            <div class="header-search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <circle cx="11" cy="11" r="8" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                </svg><input type="text" placeholder="Поиск товаров..."></div>
+            <div class="header-icons">
+                <a href="profile.html" title="Профиль"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                        <circle cx="12" cy="7" r="4" />
+                    </svg></a>
+                <a href="wallet.html" title="Кошелёк"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="4" width="20" height="16" rx="2" />
+                        <path d="M2 10h20" />
+                        <circle cx="17" cy="14" r="1.5" fill="currentColor" />
+                    </svg></a>
+                <a href="cart.html" title="Корзина"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+                        <line x1="3" y1="6" x2="21" y2="6" />
+                        <path d="M16 10a4 4 0 0 1-8 0" />
+                    </svg><span class="icon-badge">3</span></a>
+            </div>
+            <button class="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+
+    <div class="mobile-menu">
+        <div class="mobile-menu-header"><span class="logo">GRAN<span>UM</span></span><button
+                class="mobile-menu-close">✕</button></div>
+        <nav><a href="index.html">Главная</a><a href="catalog.html">Каталог</a><a href="preorder.html">Предзаказ</a><a
+                href="profile.html">Профиль</a><a href="wallet.html">Кошелёк</a><a href="cart.html">Корзина</a><a
+                href="feedback.html">Обратная связь</a></nav>
+    </div>
+
+    <div class="container">
+        <div class="breadcrumbs"><a href="index.html">Главная</a><span>/</span><span>Каталог</span></div>
+    </div>
+
+    <section class="section" style="padding-top:0;">
+        <div class="container">
+            <h1 class="section-title" style="margin-bottom:4px;">Каталог</h1>
+            <p class="section-subtitle">545 товаров в 6 категориях</p>
+
+            <button class="btn btn-secondary btn-sm filter-toggle"
+                style="margin-bottom:16px;display:none;">Фильтры</button>
+
+            <div class="catalog-layout">
+                <!-- Sidebar -->
+                <aside class="sidebar">
+                    <div class="filter-group">
+                        <h4>Категория <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg></h4>
+                        <div class="filter-options">
+                            <label><input type="checkbox"> Кроссовки <span
+                                    style="margin-left:auto;color:var(--text-muted);font-size:12px;">142</span></label>
+                            <label><input type="checkbox"> Футболки <span
+                                    style="margin-left:auto;color:var(--text-muted);font-size:12px;">98</span></label>
+                            <label><input type="checkbox"> Толстовки <span
+                                    style="margin-left:auto;color:var(--text-muted);font-size:12px;">76</span></label>
+                            <label><input type="checkbox"> Брюки <span
+                                    style="margin-left:auto;color:var(--text-muted);font-size:12px;">64</span></label>
+                            <label><input type="checkbox"> Куртки <span
+                                    style="margin-left:auto;color:var(--text-muted);font-size:12px;">53</span></label>
+                            <label><input type="checkbox"> Аксессуары <span
+                                    style="margin-left:auto;color:var(--text-muted);font-size:12px;">112</span></label>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <h4>Размер <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg></h4>
+                        <div class="filter-options" style="flex-direction:row;flex-wrap:wrap;gap:6px;">
+                            <label style="width:auto;"><input type="checkbox"> XS</label>
+                            <label style="width:auto;"><input type="checkbox"> S</label>
+                            <label style="width:auto;"><input type="checkbox"> M</label>
+                            <label style="width:auto;"><input type="checkbox"> L</label>
+                            <label style="width:auto;"><input type="checkbox"> XL</label>
+                            <label style="width:auto;"><input type="checkbox"> XXL</label>
+                            <label style="width:auto;"><input type="checkbox"> 38</label>
+                            <label style="width:auto;"><input type="checkbox"> 39</label>
+                            <label style="width:auto;"><input type="checkbox"> 40</label>
+                            <label style="width:auto;"><input type="checkbox"> 41</label>
+                            <label style="width:auto;"><input type="checkbox"> 42</label>
+                            <label style="width:auto;"><input type="checkbox"> 43</label>
+                            <label style="width:auto;"><input type="checkbox"> 44</label>
+                            <label style="width:auto;"><input type="checkbox"> 45</label>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <h4>Цвет <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg></h4>
+                        <div class="color-options">
+                            <div class="color-swatch" style="background:#111;" title="Чёрный"></div>
+                            <div class="color-swatch" style="background:#f5f5f5;" title="Белый"></div>
+                            <div class="color-swatch" style="background:#6b6b6b;" title="Серый"></div>
+                            <div class="color-swatch" style="background:#2d4a2d;" title="Хаки"></div>
+                            <div class="color-swatch" style="background:#3a3a5c;" title="Тёмно-синий"></div>
+                            <div class="color-swatch" style="background:#8b6b4a;" title="Бежевый"></div>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <h4>Цена <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg></h4>
+                        <div class="price-range"><input type="text" placeholder="от 1 000"><span>—</span><input
+                                type="text" placeholder="до 30 000"></div>
+                    </div>
+                    <div class="filter-group">
+                        <h4>Бренд <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg></h4>
+                        <div class="filter-options">
+                            <label><input type="checkbox"> North Line</label>
+                            <label><input type="checkbox"> Mono Studio</label>
+                            <label><input type="checkbox"> Urban Form</label>
+                            <label><input type="checkbox"> Static Wear</label>
+                            <label><input type="checkbox"> District 06</label>
+                            <label><input type="checkbox"> Black Canvas</label>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <h4>Наличие <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg></h4>
+                        <div class="filter-options">
+                            <label><input type="checkbox"> В наличии</label>
+                            <label><input type="checkbox"> Мало</label>
+                            <label><input type="checkbox"> Предзаказ</label>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <h4>Город <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg></h4>
+                        <div class="filter-options">
+                            <label><input type="checkbox"> Москва</label>
+                            <label><input type="checkbox"> Санкт-Петербург</label>
+                            <label><input type="checkbox"> Казань</label>
+                            <label><input type="checkbox"> Екатеринбург</label>
+                            <label><input type="checkbox"> Новосибирск</label>
+                            <label><input type="checkbox"> Краснодар</label>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <h4>Доставка <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg></h4>
+                        <div class="filter-options">
+                            <label><input type="checkbox"> Курьер</label>
+                            <label><input type="checkbox"> Самовывоз</label>
+                            <label><input type="checkbox"> Пункт выдачи</label>
+                            <label><input type="checkbox"> Экспресс</label>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-sm" style="width:100%;margin-top:8px;">Применить</button>
+                    <button class="btn btn-outline btn-sm" style="width:100%;margin-top:8px;">Сбросить</button>
+                </aside>
+
+                <!-- Products -->
+                <div>
+                    <div class="catalog-toolbar">
+                        <span class="results-count">Найдено: <strong>24</strong> товара</span>
+                        <div class="toolbar-actions">
+                            <select class="sort-select">
+                                <option>По популярности</option>
+                                <option>Сначала дешёвые</option>
+                                <option>Сначала дорогие</option>
+                                <option>Новинки</option>
+                                <option>По скидке</option>
+                            </select>
+                            <div class="view-toggle">
+                                <button class="view-grid active" title="Сетка"><svg width="16" height="16"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="3" y="3" width="7" height="7" />
+                                        <rect x="14" y="3" width="7" height="7" />
+                                        <rect x="3" y="14" width="7" height="7" />
+                                        <rect x="14" y="14" width="7" height="7" />
+                                    </svg></button>
+                                <button class="view-list" title="Список"><svg width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="8" y1="6" x2="21" y2="6" />
+                                        <line x1="8" y1="12" x2="21" y2="12" />
+                                        <line x1="8" y1="18" x2="21" y2="18" />
+                                        <line x1="3" y1="6" x2="3.01" y2="6" />
+                                        <line x1="3" y1="12" x2="3.01" y2="12" />
+                                        <line x1="3" y1="18" x2="3.01" y2="18" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="products-grid">
+                        <!-- Row 1 -->
+                        <div class="product-card">
+                            <div class="product-thumb">
+                                <div class="placeholder-img">👟</div>
+                                <div class="product-badges"><span class="badge badge-new">Новинка</span></div>
+                                <div class="product-actions-overlay"><a href="product.html"
+                                        class="btn btn-primary btn-sm" style="flex:1">В корзину</a><button
+                                        class="btn btn-secondary btn-sm btn-quick-view">👁</button></div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">North Line</div>
+                                <div class="product-name"><a href="product.html">Urban Runner X1</a></div>
+                                <div class="product-price"><span class="price-current">12 900 ₽</span></div>
+                                <div class="product-status status-instock">● В наличии</div>
+                                <div class="product-sizes">
+                                    <span>40</span><span>41</span><span>42</span><span>43</span><span>44</span></div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-thumb">
+                                <div class="placeholder-img">👕</div>
+                                <div class="product-badges"><span class="badge badge-sale">-20%</span></div>
+                                <div class="product-actions-overlay"><a href="product.html"
+                                        class="btn btn-primary btn-sm" style="flex:1">В корзину</a><button
+                                        class="btn btn-secondary btn-sm btn-quick-view">👁</button></div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">Mono Studio</div>
+                                <div class="product-name"><a href="product.html">Essential Tee Oversize</a></div>
+                                <div class="product-price"><span class="price-current">3 190 ₽</span><span
+                                        class="price-old">3 990 ₽</span></div>
+                                <div class="product-status status-instock">● В наличии</div>
+                                <div class="product-sizes"><span>S</span><span>M</span><span>L</span><span>XL</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-thumb">
+                                <div class="placeholder-img">🧥</div>
+                                <div class="product-badges"><span class="badge badge-new">Новинка</span></div>
+                                <div class="product-actions-overlay"><a href="product.html"
+                                        class="btn btn-primary btn-sm" style="flex:1">В корзину</a><button
+                                        class="btn btn-secondary btn-sm btn-quick-view">👁</button></div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">Urban Form</div>
+                                <div class="product-name"><a href="product.html">Tech Shell Jacket</a></div>
+                                <div class="product-price"><span class="price-current">18 500 ₽</span></div>
+                                <div class="product-status status-low">● Мало</div>
+                                <div class="product-sizes"><span>M</span><span>L</span><span>XL</span></div>
+                            </div>
+                        </div>
+
+                        <!-- Row 2 -->
+                        <div class="product-card">
+                            <div class="product-thumb">
+                                <div class="placeholder-img">👖</div>
+                                <div class="product-badges"><span class="badge badge-preorder">Предзаказ</span></div>
+                                <div class="product-actions-overlay"><a href="preorder.html"
+                                        class="btn btn-primary btn-sm" style="flex:1">Предзаказ</a></div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">Static Wear</div>
+                                <div class="product-name"><a href="product.html">Cargo Wide Pant</a></div>
+                                <div class="product-price"><span class="price-current">7 900 ₽</span></div>
+                                <div class="product-status status-preorder">◌ Предзаказ</div>
+                                <div class="product-sizes"><span>S</span><span>M</span><span>L</span></div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-thumb">
+                                <div class="placeholder-img">👟</div>
+                                <div class="product-badges"><span class="badge badge-hit">Хит</span></div>
+                                <div class="product-actions-overlay"><a href="product.html"
+                                        class="btn btn-primary btn-sm" style="flex:1">В корзину</a><button
+                                        class="btn btn-secondary btn-sm btn-quick-view">👁</button></div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">District 06</div>
+                                <div class="product-name"><a href="product.html">Street Force Mid</a></div>
+                                <div class="product-price"><span class="price-current">15 400 ₽</span></div>
+                                <div class="product-status status-instock">● В наличии</div>
+                                <div class="product-sizes">
+                                    <span>40</span><span>42</span><span>43</span><span>44</span><span>45</span></div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-thumb">
+                                <div class="placeholder-img">🧢</div>
+                                <div class="product-badges"><span class="badge badge-sale">-15%</span></div>
+                                <div class="product-actions-overlay"><a href="product.html"
+                                        class="btn btn-primary btn-sm" style="flex:1">В корзину</a></div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">Black Canvas</div>
+                                <div class="product-name"><a href="product.html">Minimal Cap Washed</a></div>
+                                <div class="product-price"><span class="price-current">2 290 ₽</span><span
+                                        class="price-old">2 690 ₽</span></div>
+                                <div class="product-status status-instock">● В наличии</div>
+                            </div>
+                        </div>
+
+                        <!-- Row 3 -->
+                        <div class="product-card">
+                            <div class="product-thumb">
+                                <div class="placeholder-img">🧥</div>
+                                <div class="product-badges"><span class="badge badge-hit">Хит</span></div>
+                                <div class="product-actions-overlay"><a href="product.html"
+                                        class="btn btn-primary btn-sm" style="flex:1">В корзину</a></div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">North Line</div>
+                                <div class="product-name"><a href="product.html">Puffer Coat Graphite</a></div>
+                                <div class="product-price"><span class="price-current">24 900 ₽</span></div>
+                                <div class="product-status status-low">● Мало</div>
+                                <div class="product-sizes"><span>M</span><span>L</span></div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-thumb">
+                                <div class="placeholder-img">👕</div>
+                                <div class="product-badges"><span class="badge badge-hit">Хит</span></div>
+                                <div class="product-actions-overlay"><a href="product.html"
+                                        class="btn btn-primary btn-sm" style="flex:1">В корзину</a></div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">Mono Studio</div>
+                                <div class="product-name"><a href="product.html">Heavyweight Hoodie</a></div>
+                                <div class="product-price"><span class="price-current">8 900 ₽</span></div>
+                                <div class="product-status status-instock">● В наличии</div>
+                                <div class="product-sizes">
+                                    <span>S</span><span>M</span><span>L</span><span>XL</span><span>XXL</span></div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-thumb">
+                                <div class="placeholder-img">👟</div>
+                                <div class="product-actions-overlay"><a href="product.html"
+                                        class="btn btn-primary btn-sm" style="flex:1">В корзину</a></div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">Urban Form</div>
+                                <div class="product-name"><a href="product.html">Daily Trainer Lite</a></div>
+                                <div class="product-price"><span class="price-current">9 800 ₽</span></div>
+                                <div class="product-status status-instock">● В наличии</div>
+                                <div class="product-sizes">
+                                    <span>39</span><span>40</span><span>41</span><span>42</span><span>43</span></div>
+                            </div>
+                        </div>
+
+                        <!-- Row 4 -->
+                        <div class="product-card">
+                            <div class="product-thumb">
+                                <div class="placeholder-img">👕</div>
+                                <div class="product-actions-overlay"><a href="product.html"
+                                        class="btn btn-primary btn-sm" style="flex:1">В корзину</a></div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">Static Wear</div>
+                                <div class="product-name"><a href="product.html">Relaxed Polo Jersey</a></div>
+                                <div class="product-price"><span class="price-current">4 500 ₽</span></div>
+                                <div class="product-status status-instock">● В наличии</div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-thumb">
+                                <div class="placeholder-img">🧥</div>
+                                <div class="product-badges"><span class="badge badge-sale">-20%</span></div>
+                                <div class="product-actions-overlay"><a href="product.html"
+                                        class="btn btn-primary btn-sm" style="flex:1">В корзину</a></div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">District 06</div>
+                                <div class="product-name"><a href="product.html">Windbreaker Stealth</a></div>
+                                <div class="product-price"><span class="price-current">11 200 ₽</span><span
+                                        class="price-old">13 900 ₽</span></div>
+                                <div class="product-status status-instock">● В наличии</div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-thumb">
+                                <div class="placeholder-img">🎒</div>
+                                <div class="product-actions-overlay"><a href="product.html"
+                                        class="btn btn-primary btn-sm" style="flex:1">В корзину</a></div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">Black Canvas</div>
+                                <div class="product-name"><a href="product.html">Utility Backpack 22L</a></div>
+                                <div class="product-price"><span class="price-current">6 400 ₽</span></div>
+                                <div class="product-status status-instock">● В наличии</div>
+                            </div>
+                        </div>
+
+                        <!-- Row 5 -->
+                        <div class="product-card">
+                            <div class="product-thumb">
+                                <div class="placeholder-img">👟</div>
+                                <div class="product-badges"><span class="badge badge-preorder">Предзаказ</span></div>
+                                <div class="product-actions-overlay"><a href="preorder.html"
+                                        class="btn btn-primary btn-sm" style="flex:1">Предзаказ</a></div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">North Line</div>
+                                <div class="product-name"><a href="product.html">Aero Boost V2</a></div>
+                                <div class="product-price"><span class="price-current">16 500 ₽</span></div>
+                                <div class="product-status status-preorder">◌ Предзаказ</div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-thumb">
+                                <div class="placeholder-img">🧥</div>
+                                <div class="product-badges"><span class="badge badge-preorder">Предзаказ</span></div>
+                                <div class="product-actions-overlay"><a href="preorder.html"
+                                        class="btn btn-primary btn-sm" style="flex:1">Предзаказ</a></div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">Mono Studio</div>
+                                <div class="product-name"><a href="product.html">Modular Vest System</a></div>
+                                <div class="product-price"><span class="price-current">14 200 ₽</span></div>
+                                <div class="product-status status-preorder">◌ Предзаказ</div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-thumb">
+                                <div class="placeholder-img">👖</div>
+                                <div class="product-badges"><span class="badge badge-preorder">Предзаказ</span></div>
+                                <div class="product-actions-overlay"><a href="preorder.html"
+                                        class="btn btn-primary btn-sm" style="flex:1">Предзаказ</a></div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">Static Wear</div>
+                                <div class="product-name"><a href="product.html">Archive Denim Wide</a></div>
+                                <div class="product-price"><span class="price-current">9 400 ₽</span></div>
+                                <div class="product-status status-preorder">◌ Предзаказ</div>
+                            </div>
+                        </div>
+
+                        <!-- Row 6 -->
+                        <div class="product-card">
+                            <div class="product-thumb">
+                                <div class="placeholder-img">⌚</div>
+                                <div class="product-badges"><span class="badge badge-new">Новинка</span></div>
+                                <div class="product-actions-overlay"><a href="product.html"
+                                        class="btn btn-primary btn-sm" style="flex:1">В корзину</a></div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">Black Canvas</div>
+                                <div class="product-name"><a href="product.html">Ceramic Watch Band</a></div>
+                                <div class="product-price"><span class="price-current">5 800 ₽</span></div>
+                                <div class="product-status status-preorder">◌ Предзаказ</div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-thumb">
+                                <div class="placeholder-img">👕</div>
+                                <div class="product-actions-overlay"><a href="product.html"
+                                        class="btn btn-primary btn-sm" style="flex:1">В корзину</a></div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">Urban Form</div>
+                                <div class="product-name"><a href="product.html">Classic Crew Neck</a></div>
+                                <div class="product-price"><span class="price-current">3 600 ₽</span></div>
+                                <div class="product-status status-instock">● В наличии</div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-thumb">
+                                <div class="placeholder-img">👖</div>
+                                <div class="product-badges"><span class="badge badge-sale">-10%</span></div>
+                                <div class="product-actions-overlay"><a href="product.html"
+                                        class="btn btn-primary btn-sm" style="flex:1">В корзину</a></div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">District 06</div>
+                                <div class="product-name"><a href="product.html">Slim Tech Chino</a></div>
+                                <div class="product-price"><span class="price-current">6 210 ₽</span><span
+                                        class="price-old">6 900 ₽</span></div>
+                                <div class="product-status status-instock">● В наличии</div>
+                            </div>
+                        </div>
+
+                        <!-- Row 7 -->
+                        <div class="product-card">
+                            <div class="product-thumb">
+                                <div class="placeholder-img">🧣</div>
+                                <div class="product-actions-overlay"><a href="product.html"
+                                        class="btn btn-primary btn-sm" style="flex:1">В корзину</a></div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">North Line</div>
+                                <div class="product-name"><a href="product.html">Merino Scarf Soft</a></div>
+                                <div class="product-price"><span class="price-current">3 200 ₽</span></div>
+                                <div class="product-status status-instock">● В наличии</div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-thumb">
+                                <div class="placeholder-img">👕</div>
+                                <div class="product-badges"><span class="badge badge-hit">Хит</span></div>
+                                <div class="product-actions-overlay"><a href="product.html"
+                                        class="btn btn-primary btn-sm" style="flex:1">В корзину</a></div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">Mono Studio</div>
+                                <div class="product-name"><a href="product.html">Drop-Shoulder Sweat</a></div>
+                                <div class="product-price"><span class="price-current">6 800 ₽</span></div>
+                                <div class="product-status status-instock">● В наличии</div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-thumb">
+                                <div class="placeholder-img">👟</div>
+                                <div class="product-badges"><span class="badge badge-new">Новинка</span></div>
+                                <div class="product-actions-overlay"><a href="product.html"
+                                        class="btn btn-primary btn-sm" style="flex:1">В корзину</a></div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">Static Wear</div>
+                                <div class="product-name"><a href="product.html">Retro Court Low</a></div>
+                                <div class="product-price"><span class="price-current">10 500 ₽</span></div>
+                                <div class="product-status status-low">● Мало</div>
+                            </div>
+                        </div>
+
+                        <!-- Row 8 -->
+                        <div class="product-card">
+                            <div class="product-thumb">
+                                <div class="placeholder-img">🧥</div>
+                                <div class="product-actions-overlay"><a href="product.html"
+                                        class="btn btn-primary btn-sm" style="flex:1">В корзину</a></div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">Black Canvas</div>
+                                <div class="product-name"><a href="product.html">Utility Overshirt</a></div>
+                                <div class="product-price"><span class="price-current">7 400 ₽</span></div>
+                                <div class="product-status status-instock">● В наличии</div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-thumb">
+                                <div class="placeholder-img">🎒</div>
+                                <div class="product-badges"><span class="badge badge-sale">-25%</span></div>
+                                <div class="product-actions-overlay"><a href="product.html"
+                                        class="btn btn-primary btn-sm" style="flex:1">В корзину</a></div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">Urban Form</div>
+                                <div class="product-name"><a href="product.html">Sling Bag Compact</a></div>
+                                <div class="product-price"><span class="price-current">2 925 ₽</span><span
+                                        class="price-old">3 900 ₽</span></div>
+                                <div class="product-status status-instock">● В наличии</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pagination">
+                        <span class="active">1</span><a href="#">2</a><a href="#">3</a><a
+                            href="#">4</a><span>...</span><a href="#">12</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Каталог</h4><a href="catalog.html">Кроссовки</a><a href="catalog.html">Футболки</a><a
+                        href="catalog.html">Толстовки</a><a href="catalog.html">Брюки</a><a
+                        href="catalog.html">Куртки</a><a href="catalog.html">Аксессуары</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Покупателям</h4><a href="feedback.html">Доставка и оплата</a><a href="feedback.html">Возврат и
+                        обмен</a><a href="preorder.html">Предзаказ</a><a href="feedback.html">Контакты</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Аккаунт</h4><a href="profile.html">Профиль</a><a href="wallet.html">Кошелёк</a><a
+                        href="cart.html">Корзина</a><a href="profile.html">Мои заказы</a>
+                </div>
+            </div>
+            <div class="footer-bottom"><span>© 2026 GRANUM. Все права защищены.</span><span>Демо-версия</span></div>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="quickViewModal">
+        <div class="modal">
+            <div class="modal-header">
+                <h2>Быстрый просмотр</h2><button class="modal-close">✕</button>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+                <div
+                    style="aspect-ratio:3/4;background:var(--bg-hover);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;font-size:48px;opacity:0.3;">
+                    👟</div>
+                <div>
+                    <div class="product-brand">North Line</div>
+                    <h3 style="font-size:18px;margin-bottom:8px;">Urban Runner X1</h3>
+                    <div class="product-price"><span class="price-current">12 900 ₽</span></div>
+                    <div class="product-status status-instock" style="margin:12px 0;">● В наличии</div>
+                    <div class="size-options"><button class="size-btn">40</button><button
+                            class="size-btn active">42</button><button class="size-btn">43</button><button
+                            class="size-btn">44</button></div>
+                    <div style="margin-top:16px;display:flex;gap:8px;"><a href="product.html"
+                            class="btn btn-primary btn-sm" style="flex:1;">Подробнее</a><a href="cart.html"
+                            class="btn btn-secondary btn-sm">В корзину</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

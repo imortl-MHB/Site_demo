@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль — GRANUM</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">GRAN<span>UM</span></a>
+            <nav class="header-nav"><a href="catalog.html">Каталог</a><a href="preorder.html">Предзаказ</a><a
+                    href="feedback.html">Контакты</a></nav>
+            <div class="header-search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <circle cx="11" cy="11" r="8" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                </svg><input type="text" placeholder="Поиск..."></div>
+            <div class="header-icons">
+                <a href="profile.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                        <circle cx="12" cy="7" r="4" />
+                    </svg></a>
+                <a href="wallet.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <rect x="2" y="4" width="20" height="16" rx="2" />
+                        <path d="M2 10h20" />
+                        <circle cx="17" cy="14" r="1.5" fill="currentColor" />
+                    </svg></a>
+                <a href="cart.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+                        <line x1="3" y1="6" x2="21" y2="6" />
+                        <path d="M16 10a4 4 0 0 1-8 0" />
+                    </svg><span class="icon-badge">3</span></a>
+            </div>
+            <button class="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+
+    <div class="mobile-menu">
+        <div class="mobile-menu-header"><span class="logo">GRAN<span>UM</span></span><button
+                class="mobile-menu-close">✕</button></div>
+        <nav><a href="index.html">Главная</a><a href="catalog.html">Каталог</a><a href="preorder.html">Предзаказ</a><a
+                href="profile.html">Профиль</a><a href="wallet.html">Кошелёк</a><a href="cart.html">Корзина</a><a
+                href="feedback.html">Обратная связь</a></nav>
+    </div>
+
+    <div class="container">
+        <div class="breadcrumbs"><a href="index.html">Главная</a><span>/</span><span>Профиль</span></div>
+    </div>
+
+    <section class="section" style="padding-top:0;">
+        <div class="container">
+            <div class="profile-layout">
+                <aside class="profile-menu">
+                    <div class="profile-user">
+                        <div class="profile-avatar">👤</div>
+                        <h3>Иван Петров</h3>
+                        <p>ivan@example.com</p>
+                    </div>
+                    <nav class="profile-nav">
+                        <a href="#" class="active" data-section="sec-personal"><svg width="16" height="16"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                                <circle cx="12" cy="7" r="4" />
+                            </svg> Личные данные</a>
+                        <a href="#" data-section="sec-orders"><svg width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="3" width="20" height="18" rx="2" />
+                                <line x1="2" y1="9" x2="22" y2="9" />
+                            </svg> Заказы</a>
+                        <a href="#" data-section="sec-addresses"><svg width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg> Адреса</a>
+                        <a href="#" data-section="sec-favorites"><svg width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                            </svg> Избранное</a>
+                        <a href="#" data-section="sec-notifications"><svg width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" />
+                            </svg> Уведомления</a>
+                        <a href="#" data-section="sec-settings"><svg width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="3" />
+                                <path
+                                    d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" />
+                            </svg> Настройки</a>
+                    </nav>
+                </aside>
+
+                <div class="profile-content">
+                    <!-- Personal -->
+                    <div id="sec-personal" class="profile-section">
+                        <h2>Личные данные</h2>
+                        <div class="form-row">
+                            <div class="form-group"><label>Имя</label><input type="text" class="form-control"
+                                    value="Иван"></div>
+                            <div class="form-group"><label>Фамилия</label><input type="text" class="form-control"
+                                    value="Петров"></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group"><label>Email</label><input type="email" class="form-control"
+                                    value="ivan@example.com"></div>
+                            <div class="form-group"><label>Телефон</label><input type="tel" class="form-control"
+                                    value="+7 (999) 123-45-67"></div>
+                        </div>
+                        <div class="form-group"><label>Дата рождения</label><input type="date" class="form-control"
+                                value="1995-06-15"></div>
+                        <button class="btn btn-primary">Сохранить</button>
+                    </div>
+
+                    <!-- Orders -->
+                    <div id="sec-orders" class="profile-section" style="display:none;">
+                        <h2>Мои заказы</h2>
+                        <table class="orders-table">
+                            <thead>
+                                <tr>
+                                    <th>№ заказа</th>
+                                    <th>Дата</th>
+                                    <th>Сумма</th>
+                                    <th>Статус</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#GR-20260301</td>
+                                    <td>01.03.2026</td>
+                                    <td>12 900 ₽</td>
+                                    <td><span class="order-status delivered">Доставлен</span></td>
+                                </tr>
+                                <tr>
+                                    <td>#GR-20260225</td>
+                                    <td>25.02.2026</td>
+                                    <td>27 800 ₽</td>
+                                    <td><span class="order-status delivered">Доставлен</span></td>
+                                </tr>
+                                <tr>
+                                    <td>#GR-20260310</td>
+                                    <td>10.03.2026</td>
+                                    <td>8 900 ₽</td>
+                                    <td><span class="order-status processing">В обработке</span></td>
+                                </tr>
+                                <tr>
+                                    <td>#GR-20260312</td>
+                                    <td>12.03.2026</td>
+                                    <td>16 500 ₽</td>
+                                    <td><span class="order-status processing">Предзаказ</span></td>
+                                </tr>
+                                <tr>
+                                    <td>#GR-20260115</td>
+                                    <td>15.01.2026</td>
+                                    <td>3 990 ₽</td>
+                                    <td><span class="order-status cancelled">Отменён</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Addresses -->
+                    <div id="sec-addresses" class="profile-section" style="display:none;">
+                        <h2>Адреса доставки</h2>
+                        <div
+                            style="padding:16px;border:1px solid var(--border);border-radius:var(--radius);margin-bottom:12px;">
+                            <div
+                                style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                                <strong>Основной адрес</strong>
+                                <span style="font-size:12px;color:var(--accent);">По умолчанию</span>
+                            </div>
+                            <p style="font-size:14px;color:var(--text-secondary);">г. Москва, ул. Тверская, д. 12, кв.
+                                45</p>
+                        </div>
+                        <div
+                            style="padding:16px;border:1px solid var(--border);border-radius:var(--radius);margin-bottom:12px;">
+                            <strong>Рабочий адрес</strong>
+                            <p style="font-size:14px;color:var(--text-secondary);margin-top:8px;">г. Москва, Пресненская
+                                наб., д. 8, офис 310</p>
+                        </div>
+                        <button class="btn btn-secondary btn-sm" style="margin-top:8px;">+ Добавить адрес</button>
+                    </div>
+
+                    <!-- Favorites -->
+                    <div id="sec-favorites" class="profile-section" style="display:none;">
+                        <h2>Избранное</h2>
+                        <div class="products-grid" style="grid-template-columns:repeat(auto-fill,minmax(200px,1fr));">
+                            <div class="product-card">
+                                <div class="product-thumb">
+                                    <div class="placeholder-img">👟</div>
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-brand">North Line</div>
+                                    <div class="product-name"><a href="product.html">Urban Runner X1</a></div>
+                                    <div class="product-price"><span class="price-current">12 900 ₽</span></div>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <div class="product-thumb">
+                                    <div class="placeholder-img">🧥</div>
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-brand">Urban Form</div>
+                                    <div class="product-name"><a href="product.html">Tech Shell Jacket</a></div>
+                                    <div class="product-price"><span class="price-current">18 500 ₽</span></div>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <div class="product-thumb">
+                                    <div class="placeholder-img">👕</div>
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-brand">Mono Studio</div>
+                                    <div class="product-name"><a href="product.html">Heavyweight Hoodie</a></div>
+                                    <div class="product-price"><span class="price-current">8 900 ₽</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Notifications -->
+                    <div id="sec-notifications" class="profile-section" style="display:none;">
+                        <h2>Уведомления</h2>
+                        <div style="padding:14px 0;border-bottom:1px solid var(--border);">
+                            <div style="display:flex;justify-content:space-between"><strong
+                                    style="font-size:14px;">Заказ #GR-20260310 собран</strong><span
+                                    style="font-size:12px;color:var(--text-muted);">11.03.2026</span></div>
+                            <p style="font-size:13px;color:var(--text-secondary);margin-top:4px;">Ваш заказ передан
+                                курьерской службе. Ожидайте доставку 12–13 марта.</p>
+                        </div>
+                        <div style="padding:14px 0;border-bottom:1px solid var(--border);">
+                            <div style="display:flex;justify-content:space-between"><strong
+                                    style="font-size:14px;">Скидка 10% на первый заказ</strong><span
+                                    style="font-size:12px;color:var(--text-muted);">10.03.2026</span></div>
+                            <p style="font-size:13px;color:var(--text-secondary);margin-top:4px;">Используйте промокод
+                                WELCOME10 при оформлении.</p>
+                        </div>
+                        <div style="padding:14px 0;">
+                            <div style="display:flex;justify-content:space-between"><strong
+                                    style="font-size:14px;">Предзаказ: Aero Boost V2</strong><span
+                                    style="font-size:12px;color:var(--text-muted);">08.03.2026</span></div>
+                            <p style="font-size:13px;color:var(--text-secondary);margin-top:4px;">Товар ожидается на
+                                складе в конце марта 2026.</p>
+                        </div>
+                    </div>
+
+                    <!-- Settings -->
+                    <div id="sec-settings" class="profile-section" style="display:none;">
+                        <h2>Настройки</h2>
+                        <div class="form-group">
+                            <label>Город по умолчанию</label>
+                            <select class="form-control">
+                                <option>Москва</option>
+                                <option>Санкт-Петербург</option>
+                                <option>Казань</option>
+                                <option>Екатеринбург</option>
+                                <option>Новосибирск</option>
+                                <option>Краснодар</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Email-уведомления</label>
+                            <div style="display:flex;gap:16px;margin-top:4px;">
+                                <label
+                                    style="display:flex;align-items:center;gap:6px;font-size:14px;color:var(--text-secondary);cursor:pointer;"><input
+                                        type="checkbox" checked style="accent-color:var(--accent);"> Акции</label>
+                                <label
+                                    style="display:flex;align-items:center;gap:6px;font-size:14px;color:var(--text-secondary);cursor:pointer;"><input
+                                        type="checkbox" checked style="accent-color:var(--accent);"> Статусы
+                                    заказов</label>
+                                <label
+                                    style="display:flex;align-items:center;gap:6px;font-size:14px;color:var(--text-secondary);cursor:pointer;"><input
+                                        type="checkbox" style="accent-color:var(--accent);"> Новинки</label>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" style="margin-top:8px;">Сохранить настройки</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom"><span>© 2026 GRANUM. Все права защищены.</span></div>
+        </div>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
